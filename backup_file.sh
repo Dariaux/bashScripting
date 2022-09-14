@@ -25,6 +25,6 @@ if [ $? -eq 0 ]  # if the exit code = 0 means that last comand succeeded.
 then
   echo "Backup Succeeded!!!"
 else 
-  echo "Files does not exits."
+  echo "Back up failed."
+  exit 1  # * this will return a exit code 1.
 fi
-

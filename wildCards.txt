@@ -1,0 +1,53 @@
+
+          Wildcards:
+
+*     Matches zero or more characters.
+
+?     Matches exactly one character. 
+
+
+
+          Range:
+
+[]    A character class.
+
+      ca[nt]*  (will match all the words that containt "n" or "t" after "ca")
+
+      - can
+      - cat
+      - candy
+      - catch
+
+[!] Matches any of the caracter NOT included between the brackets. 
+
+      [!aeiou]* (wont match if any word starts with a,e,i,o,u)
+
+      - baseball
+      - cricket
+
+[1-10] 
+[a-g]  * Matches a range of values 
+
+      [a-g]* (will match all the words that starts with a, e, i, o, u)
+
+
+
+          Named Character Classes:
+
+[[:alpha:]] Matches: alphabetical letters, lower or upper case
+[[:alnum:]] Matches: both alphabetical upper and lower; and digits.
+[[:digit:]] Matches: only digits [0-9].
+[[:lower:]] Matches: lower case letters
+[[:space:]] Matches: spaces, tabs, and new line characters.
+[[:upper:]] Matches: upper case letters
+
+
+
+          Matchin Wildcards Patterns:
+
+\ escap character. Use if you want to match a wildcard character.
+
+      *\?
+
+      - done? 
+      - where?

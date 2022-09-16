@@ -12,7 +12,7 @@
 # /bin/bash -e -x
 # /bin/bash -x -e
 
-#? -v: Prints shell input lines as they are read. It can be combined with other options.
+#? -v: Prints shell input lines as they are appear in the script. It can be combined with other options.
 # /bin/bash -vx
 
 
